@@ -1,15 +1,19 @@
 #!/usr/bin/env node
 
-// file level strict mode ON
-// 'use strict';
+// Learning and understanding map from MDN 
+// source url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
 
-// function level strict mode
-function one() {
-  'use strict';
-  function two() {
-    return "So am I";
-  }
-  return "I'm a function in strict mode";
-}
+// map holds key value pairs
+// any value (object/ primitive) can be either a key or a value.
 
-console.log(one());
+let arr = [ [1, 'name'], [2, 'age'] ];
+let m = new Map(arr);
+
+console.log(m);
+console.log(m.size);
+console.log(m.get(1));
+console.log(m.get(2));
+
+m.set(3, 'company');
+console.log(m);
+console.log(m.get(3));
