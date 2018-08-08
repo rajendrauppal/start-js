@@ -7,13 +7,15 @@
 // any value (object/ primitive) can be either a key or a value.
 
 let arr = [ [1, 'name'], [2, 'age'] ];
-let m = new Map(arr);
+let paramMap = new Map(arr);
 
-console.log(m);
-console.log(m.size);
-console.log(m.get(1));
-console.log(m.get(2));
+console.log(paramMap);  // output: complete map object
+console.log(paramMap.size);  // output: number of key-value pairs present in the map
+console.log(paramMap.get(1));  // get the value present at key = 1
+console.log(paramMap.get(2));
 
-m.set(3, 'company');
-console.log(m);
-console.log(m.get(3));
+paramMap.set(3, 'company');  // set a new value 'company' at a new key = 3
+console.log(paramMap);
+console.log(paramMap.get(3));
+
+// a map
